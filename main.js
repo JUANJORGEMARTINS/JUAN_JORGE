@@ -1,4 +1,6 @@
-import { obterDadosGlobais, titulo, obterCor } from './informacoesGlobais.js';
+// graficos.js
+
+import { obterDadosGlobais, titulo, cores } from './importacoesGlobais.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
     const container = document.getElementById("graficos-container");
@@ -14,8 +16,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                 labels: ["Facebook", "Instagram", "Twitter"],
                 datasets: [{
                     label: 'Engajamento',
-                    data: [dadosGlobais.facebook.engajamento, dadosGlobais.instagram.engajamento, dadosGlobais.twitter.engajamento],
-                    backgroundColor: obterCor("primaria"),
+                    data: [
+                        dadosGlobais.facebook.engajamento,
+                        dadosGlobais.instagram.engajamento,
+                        dadosGlobais.twitter.engajamento
+                    ],
+                    backgroundColor: cores.primaria,
                 }]
             },
             options: {
@@ -26,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     },
                     title: {
                         display: true,
-                        text: 'Engajamento nas Redes Sociais'
+                        text: titulo
                     }
                 }
             },
