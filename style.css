@@ -109,13 +109,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-// importacoesGlobais.js
-
-export const titulo = "Relatório das Redes Sociais";
-export const autor = "Criado por Rãzão";
-export const cores = {
-    fundo: "#A5B68D",
-    primaria: "#ECDFCC",
-    secundaria: "#FCFAEE"
-};
